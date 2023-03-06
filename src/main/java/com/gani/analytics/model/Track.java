@@ -9,6 +9,15 @@ public class Track {
 
     private String link;
     private Date date;
+    private String userId;
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public String getLink() {
         return link;
@@ -31,6 +40,7 @@ public class Track {
         return "Track{" +
                 "link='" + link + '\'' +
                 ", date=" + date +
+                ", userId='" + userId + '\'' +
                 '}';
     }
 }
